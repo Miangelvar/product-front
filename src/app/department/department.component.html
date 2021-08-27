@@ -1,0 +1,17 @@
+<p>Department works!</p>
+<h2>Department List</h2>
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let ATTRIBUTE of DEPARTMENT_ATTR">
+      {{ATTRIBUTE}}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let dep of departments">
+    <td>{{dep.code}}</td>
+    <td>{{dep.name}}</td>
+  </tr>
+  </tbody>
+</table>
